@@ -26,9 +26,18 @@
     top: 20px;
     border-radius: 50%;
     background-image: linear-gradient(150deg, transparent 50%, $sec 50%), linear-gradient(90deg, $sec 50%, $theme-green 50%);
+    animation: rotation 1200ms infinite linear;
     -webkit-animation: rotation 1200ms infinite linear;
     transform-origin: 50% 50%;
     animation-timing-function: ease;
+    @keyframes rotation {
+        from {
+          -webkit-transform: rotate(270deg);
+        }
+        to {
+          -webkit-transform: rotate(630deg);
+        }
+      }
 
     @-webkit-keyframes rotation {
       from {
