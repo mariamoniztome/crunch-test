@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# crunch-test
-=======
-
 # Betting Website Landing Page Clone
 
 
