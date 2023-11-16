@@ -17,7 +17,7 @@ const HeadsUpNotification = () => {
   };
 
   return (
-    <div className={`heads-up ${isContentVisible ? '' : 'hidden'}`}>
+    <div className={`heads-up ${isContentVisible ? '' : 'content-hidden'}`}>
       <div className="heads-up__content">
         <div className="heads-up__content__title">
           <div className="heads-up__content__title__close" onClick={handleTitleCloseClick}>x</div>
