@@ -1,3 +1,4 @@
+jsx
 /**
  * A React component that displays a grid of items based on the selected category.
  * @returns The Grid component.
@@ -8,12 +9,15 @@ import images from "../../assets/img.js";
 import "./grid.scss";
 
 const Grid = () => {
+  // State to store the selected category
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  // Constants for category texts
   const allCategoryText = "Todos";
   const betsCategoryText = "Apostas";
   const casinoCategoryText = "Casino";
 
+  // Array of items
   const items = [
     {
       title: "Oferta de Boas-vindas",
@@ -88,7 +92,9 @@ const Grid = () => {
         "Faz a tua primeira aposta de 10€ (ou mais) e as próximas três ficam por nossa conta!",
     },
   ];
+  
 
+  // Filter the items based on the selected category
   const filteredItems =
     selectedCategory === "All"
       ? items
@@ -97,18 +103,21 @@ const Grid = () => {
   return (
     <>
       <div className="category-buttons">
+        {/* Button to select "All" category */}
         <button
           className="btn btn-terciary"
           onClick={() => setSelectedCategory("All")}
         >
           {allCategoryText}
         </button>
+        {/* Button to select "Bets" category */}
         <button
           className="btn btn-terciary"
           onClick={() => setSelectedCategory("Bets")}
         >
           {betsCategoryText}
         </button>
+        {/* Button to select "Casino" category */}
         <button
           className="btn btn-terciary"
           onClick={() => setSelectedCategory("Casino")}
@@ -122,6 +131,7 @@ const Grid = () => {
             <p>No items found for the selected category.</p>
           ) : (
             <div className="row">
+              {/* Render GridItem component for each filtered item */}
               {filteredItems.map((item) => (
                 <GridItem
                   key={item.title}

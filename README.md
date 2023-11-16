@@ -57,6 +57,10 @@ A cloned landing page of a betting promotion for a job application exercise.
 - **Readable**: 
   - Description: Improves code readability with font and syntax highlighting.
 
+- **Bito AI**: 
+  - Description: AI Tool used to improve code readability and generate comments.
+
+
 - **Turbo Console.log**: 
   - Description: Speeds up the process of writing and debugging console.log statements.
 

@@ -27,8 +27,8 @@ const Header = () => {
        
       </div>
       <div className="header__user">
-          <div className='btn btn-secondary'>Login</div>
-          <div className='btn btn-primary'>Registo</div>
+          <button className='btn btn-secondary'>Login</button>
+          <button className='btn btn-primary'>Registo</button>
         </div>
     </header>
   );

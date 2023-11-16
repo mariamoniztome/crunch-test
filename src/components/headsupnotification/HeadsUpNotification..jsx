@@ -1,27 +1,27 @@
+jsx
 /**
  * A React component that displays a heads-up notification with a title, text, and a close button.
  * @returns The HeadsUpNotification component.
  */
 import React, { useState } from 'react';
 import './headsupnotification.scss';
-
 import icon from "../../assets/img/icon.svg";
 
 const HeadsUpNotification = () => {
+  // State to control the visibility of the notification content
   const [isContentVisible, setIsContentVisible] = useState(true);
 
+  // Function to handle the click event on the close button
   const handleTitleCloseClick = () => {
     console.log('Closing notification');
     setIsContentVisible(false);
   };
 
-
   return (
     <div className={`heads-up ${isContentVisible ? '' : 'hidden'}`}>
       <div className="heads-up__content">
         <div className="heads-up__content__title">
-        <div className="heads-up__content__title__close" onClick={handleTitleCloseClick}>x</div>
-        
+          <div className="heads-up__content__title__close" onClick={handleTitleCloseClick}>x</div>
           20€ Grátis em Casino 
         </div>
         <div className="heads-up__content__text">

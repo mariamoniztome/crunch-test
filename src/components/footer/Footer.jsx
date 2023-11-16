@@ -1,18 +1,26 @@
-import PromoFooter from '../promofooter/PromoFooter'
-import IntroFooter from '../introfooter/IntroFooter'
-import Sponsors from '../sponsors/Sponsors'
+// Import necessary components
+import PromoFooter from '../promofooter/PromoFooter';
+import IntroFooter from '../introfooter/IntroFooter';
+import Sponsors from '../sponsors/Sponsors';
 
-import './footer.scss'
+// Import styling
+import './footer.scss';
 
+// Define Footer component
 const Footer = () => {
     return (
         <>
-         <PromoFooter />
-         <IntroFooter />
-         <Sponsors />
-        </>
-      
-    )
-}
+            {/* Render PromoFooter component */}
+            <PromoFooter />
 
-export default Footer
+            {/* Render IntroFooter component */}
+            <IntroFooter />
+
+            {/* Render Sponsors component */}
+            <Sponsors />
+        </>
+    );
+};
+
+// Export Footer component
+export default Footer;
