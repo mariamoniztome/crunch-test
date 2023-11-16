@@ -9,11 +9,11 @@ import HeadsUpNotification from "../components/headsupnotification/HeadsUpNotifi
 
 const Home = () => {
   return (
-    <>
+    <main>
         <HeroSection />
         <Grid />
         <HeadsUpNotification />
-    </>
+    </main>
       
 
   );

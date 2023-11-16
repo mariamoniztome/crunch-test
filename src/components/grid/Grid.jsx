@@ -1,4 +1,3 @@
-jsx
 /**
  * A React component that displays a grid of items based on the selected category.
  * @returns The Grid component.

@@ -17,6 +17,9 @@
     align-items: center;
     gap: 40px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+      padding: 0em 2.4em 0;
+    }
   }
   &__nav {
     ul {
@@ -43,6 +46,9 @@
     padding: 0 6em 0 0;
     display: flex;
     gap: 8px;
+    @media screen and (max-width: 768px) {
+      padding: 0em 1em 0 0;
+    }
     
     
   }

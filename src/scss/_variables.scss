@@ -8,6 +8,7 @@ $warning: #CC5F5F;     /* Warning color for alert messages */
 $gray: #E1E2E9;        /* Gray color for neutral elements */
 $white: #FFFFFF;       /* White color for backgrounds and text */
 $main-background: #020B22; /* Main background color */
+$sec:#154e7d;           /* Secondary color used for Loading*/
 $theme-green: #00E589; /* Theme color for special elements */
 $black: #000000;       /* Black color for text and elements */
 
@@ -140,6 +141,7 @@ a, button{
   &-secondary {
     border: 2px solid $theme-green;
     color: $theme-green;
+    background: none;
   }
 
   &-terciary{

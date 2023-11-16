@@ -1,4 +1,3 @@
-jsx
 /**
  * A React component that renders a promotional footer for an online casino website.
  * @returns The JSX code for the promotional footer.

@@ -1,4 +1,3 @@
-jsx
 /**
  * A React component that displays a heads-up notification with a title, text, and a close button.
  * @returns The HeadsUpNotification component.

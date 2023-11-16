@@ -11,29 +11,29 @@ const Sponsors = () => {
     <div className="sponsors-wrapper">
         <h2>Patrocinador Oficial</h2>
         <div className="flex-list">
-        <ul class="footer-sponsors__list">
-            <li class="footer-sponsors__list--icon">
+        <ul className="footer-sponsors__list">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc10}/>
             </li>
-            <li class="footer-sponsors__list--icon">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc11}/>
             </li>
-            <li class="footer-sponsors__list--icon">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc12}/>
             </li>
-            <li class="footer-sponsors__list--icon">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc13}/>
             </li>
-            <li class="footer-sponsors__list--icon">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc14}/>
             </li>
-            <li class="footer-sponsors__list--icon">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc15}/>
             </li>
-            <li class="footer-sponsors__list--icon">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc16}/>
             </li>
-            <li class="footer-sponsors__list--icon">
+            <li className="footer-sponsors__list--icon">
             <img alt="Patrocinador Oficial" src={images.imgSrc17}/>
             </li>
         </ul>

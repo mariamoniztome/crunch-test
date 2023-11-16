@@ -1,4 +1,3 @@
-jsx
 /**
  * A component that represents an item in a grid layout.
  * @param {{string}} title - The title of the grid item.
