@@ -1,0 +1,20 @@
+.bets-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    .item-wrapper{
+       border-radius: 10px;
+        width: 100%;
+      
+       &:hover{
+        box-shadow: #00e589 0px 7px 29px 0px;
+       }
+    img{
+        width: 100%;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+}
+}
+
+

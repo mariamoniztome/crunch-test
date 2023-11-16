@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+
+.sponsors-wrapper {
+  padding: 4em;
+  width: 100%;
+  background-color: $white;
+  .flex-list {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: unset;
+    }
+    .footer-sponsors__list{
+        padding: 25px;
+        img{
+            max-width: 30px;
+            width: 100%;
+            height: auto;
+        }
+    }
+  }
+
+  h2 {
+    color: $main-background;
+    text-align: center;
+  }
+}

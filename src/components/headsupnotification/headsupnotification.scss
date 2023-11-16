@@ -1,0 +1,87 @@
+@import "../../scss/variables";
+
+
+.heads-up {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 300px;
+    animation: fadein 1s 1;
+    @media (max-width: 800px) {
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      background: $white;
+      padding: 0;
+    }
+
+    &__content{
+      border-radius: 10px;
+      background: $white;
+      margin-bottom: 45px;
+      box-shadow: 3px 3px 20px $black;
+      overflow: hidden;
+      flex-grow: 1;
+  
+      @media (max-width: 800px) {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      &__title {
+        background-color: $theme-green;
+        padding: 10px;
+        color: $main-background;
+        font-weight: bold;
+        font-size: 18px;
+        color: $white;
+        overflow: auto;
+        text-align: center;
+        &__close{
+          cursor: pointer;
+          text-align: right;
+         
+        }
+      }
+      &__text {
+       
+        padding: 2em;
+       
+      }
+      &__button {
+        display: block;
+        font-size: 16px;
+        width: 75%;
+        margin: 15px auto;
+      }
+    } 
+    &__logo{
+      width: 70px;
+      border-radius: 35px;
+      background-color: $theme-green;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 3px 3px 3px $black;
+      &__image {
+        width: 100%;
+        display: block;
+      }
+    } 
+}
+ 
+  
+ 
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .hidden {
+    display: none;
+  }
