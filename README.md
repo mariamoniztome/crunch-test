@@ -65,6 +65,3 @@ A cloned landing page of a betting promotion for a job application exercise.
 
 - Inspiration from the original website [Original Website](https://www.solverde.pt/casino).
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
-
-
->>>>>>> 95817db (Initial commit)
