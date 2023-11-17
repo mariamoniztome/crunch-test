@@ -20,7 +20,7 @@ const SearchBar = () => {
           placeholder="Search"
         />
         <button onClick={handleFocus} id="search-button" className={focus ? 'active' : ''}>
-            <img src={icon} alt="Logo" />
+            <img src={icon} alt="Logo" loading="lazy" width={15} height={15}/>
         </button>
       </div>
     </div>

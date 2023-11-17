@@ -15,28 +15,28 @@ const Sponsors = () => {
           <div className="flex-list">
             <ul className="footer-sponsors__list">
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc10} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc10} loading="lazy" width={100} height={200}/>
               </li>
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc11} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc11} loading="lazy" width={100} height={200}/>
               </li>
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc12} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc12} loading="lazy" width={100} height={200}/>
               </li>
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc13} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc13} loading="lazy" width={100} height={200}/>
               </li>
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc14} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc14} loading="lazy" width={100} height={200}/>
               </li>
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc15} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc15} loading="lazy" width={100} height={200}/>
               </li>
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc16} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc16} loading="lazy" width={100} height={200}/>
               </li>
               <li className="footer-sponsors__list--icon">
-                <img alt="Patrocinador Oficial" src={images.imgSrc17} />
+                <img alt="Patrocinador Oficial" src={images.imgSrc17} loading="lazy" width={100} height={200}/>
               </li>
             </ul>
           </div>

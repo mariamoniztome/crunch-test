@@ -25,13 +25,13 @@ const HeadsUpNotification = () => {
         </div>
         <div className="heads-up__content__text">
           O <b>Solverde</b> oferece-te 20€ gratuitos para jogares casino online!
-          <a href="/" className="btn btn-primary heads-up__content__button" target="_blank">
+          <a href="#" className="btn btn-primary heads-up__content__button" target="_blank">
             Recebe
           </a>
         </div>
       </div>
       <div className="heads-up__logo">
-        <img src={icon} className="heads-up__logo__image" alt="Logo" />
+        <img src={icon} className="heads-up__logo__image" alt="Logo" loading="lazy"/>
       </div>
     </div>
   );

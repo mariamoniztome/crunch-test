@@ -15,7 +15,7 @@ const Header = () => {
    
       <div className="header__inner">
         <div className="header__logo">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" loading="lazy" width={100} height={200}/>
         </div>
        
       </div>

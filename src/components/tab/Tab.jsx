@@ -18,7 +18,7 @@ const Tab = ({ onClose, title, imageSrc, text, category, description }) => {
       <div className="pop-tab-content">
         <div className="circle" onClick={onClose}></div>
 
-        <img src={imageSrc} alt={`Image for ${title}`} />
+        <img src={imageSrc} alt={`Image for ${title}`}/>
         <h1>{title}</h1>
         <p>Ganha 30€ em free bets</p>
         <h3>Como funciona?</h3>

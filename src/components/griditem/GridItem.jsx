@@ -39,7 +39,7 @@ const GridItem = ({ title, imageSrc, text, category, description }) => {
     <div className="col-4">
       <div className="item-wrapper" id={category}>
         {/* Image */}
-        <img src={imageSrc} alt={altText} onError={handleImageError} />
+        <img src={imageSrc} alt={altText} onError={handleImageError} width={100} height={200}/>
 
         {/* Title */}
         <h2>{title}</h2>
