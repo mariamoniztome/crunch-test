@@ -8,6 +8,7 @@
  * @returns A React component representing a grid item.
  */
 import React, { useState } from 'react';
+import GridItemPropTypes from "../protypes/PropTypes";
 import Tab from '../tab/Tab';
 import './griditem.scss';
 
@@ -20,14 +21,26 @@ const GridItem = ({ title, imageSrc, text, category, description }) => {
 
   // Function to toggle the tab open or closed
   const toggleTab = () => {
-    setTabOpen(prevState => !prevState);
+    setTabOpen((prevIsTabOpen) => !prevIsTabOpen);
   };
+
+  // Function to handle image loading errors
+  const handleImageError = () => {
+    // Handle image loading error
+    console.error(`Error loading image for ${title}`);
+  };
+
+  // Combine title and text for alt text
+  const altText = `Image for ${title} - ${text}`;
+
+  // Determine if the tab is visible
+  const isTabVisible = isTabOpen;
 
   return (
     <div className="col-4">
       <div className="item-wrapper" id={category}>
         {/* Image */}
-        <img src={imageSrc} alt={`Image for ${title}`} />
+        <img src={imageSrc} alt={altText} onError={handleImageError} />
 
         {/* Title */}
         <h2>{title}</h2>
@@ -44,12 +57,18 @@ const GridItem = ({ title, imageSrc, text, category, description }) => {
         {/* Button */}
         <div className="row">
           <div className="col-12">
-            <button className="btn btn-primary btn-primary--bet" onClick={toggleTab}>Participar</button>
+            <button
+              className="btn btn-primary btn-primary--bet"
+              onClick={toggleTab}
+              aria-expanded={isTabOpen}
+            >
+              Participar
+            </button>
           </div>
         </div>
 
         {/* Render the Tab component if the tab is open */}
-        {isTabOpen && (
+        {isTabVisible && (
           <Tab
             onClose={toggleTab}
             title={title}
@@ -63,5 +82,8 @@ const GridItem = ({ title, imageSrc, text, category, description }) => {
     </div>
   );
 };
+
+// PropTypes for type checking
+GridItem.propTypes = GridItemPropTypes;
 
 export default GridItem;

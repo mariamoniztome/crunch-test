@@ -1,9 +1,13 @@
 /**
- * A React component that displays a grid of items based on the selected category.
- * @returns The Grid component.
+ * This file contains the code for the Grid component, which displays a grid of items.
+ * It allows the user to filter the items based on different categories.
+ * The component receives an array of items and renders a GridItem component for each item.
+ * The items can be filtered based on the selected category using the buttons provided.
  */
+
 import React, { useState } from "react";
 import GridItem from "../griditem/GridItem";
+import GridItemPropTypes from "../protypes/PropTypes";
 import images from "../../assets/img.js";
 import "./grid.scss";
 
@@ -148,5 +152,8 @@ const Grid = () => {
     </>
   );
 };
+
+// PropTypes for type checking
+Grid.GridItemPropTypes = {};
 
 export default Grid;
