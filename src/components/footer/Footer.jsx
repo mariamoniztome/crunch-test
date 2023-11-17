@@ -2,6 +2,7 @@
 import PromoFooter from '../promofooter/PromoFooter';
 import IntroFooter from '../introfooter/IntroFooter';
 import Sponsors from '../sponsors/Sponsors';
+import CopyFooter from '../copyfooter/CopyFooter';
 
 // Import styling
 import './footer.scss';
@@ -53,6 +54,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+
+             {/* Render CopyFooter component */}
+            <CopyFooter />
         </footer>
     );
 };
