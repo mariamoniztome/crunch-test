@@ -4,6 +4,7 @@
  */
 import React from 'react';
 import './header.scss';
+import SearchBar from '../searchbar/SearchBax';
 
 // Import the logo image
 import logo from '../../assets/img/logo.svg'; 
@@ -16,17 +17,10 @@ const Header = () => {
         <div className="header__logo">
             <img src={logo} alt="Logo" />
         </div>
-        {/* <nav className="header__nav">
-          <ul>
-            <li><a href="/">Slots</a></li>
-            <li><a href="#">Jogos de Mesa</a></li>
-            <li><a href="#">Apostas Desportivas</a></li>
-            <li><a href="#">Apostas ao Vivo</a></li>
-          </ul>
-        </nav> */}
        
       </div>
       <div className="header__user">
+          <SearchBar />
           <button className='btn btn-secondary'>Login</button>
           <button className='btn btn-primary'>Registo</button>
         </div>
