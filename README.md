@@ -29,6 +29,7 @@ A cloned landing page of a betting promotion for a job application exercise.
 
 ## Testing and Optimization
 - **Lighthouse**: An open-source, automated tool for improving the quality of web pages.
+- **W3C Validator**: Ensure your HTML and CSS code adheres to W3C standards by validating it using the W3C Markup Validation Service and W3C CSS Validation Service.
 
 ## Development Environment
 
