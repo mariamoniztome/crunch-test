@@ -17,12 +17,21 @@ const Tab = ({ onClose, title, imageSrc, text, category, description }) => {
     <div className="pop-tab">
       <div className="pop-tab-content">
         <div className="circle" onClick={onClose}></div>
-        <h1>{title}</h1>
+
         <img src={imageSrc} alt={`Image for ${title}`} />
         <h1>{title}</h1>
         <p>Ganha 30€ em free bets</p>
+        <h3>Como funciona?</h3>
         <div className="wrapper-list">
           <ol>
+            <li>
+              <span>
+                {" "}
+                Faz a tua primeira aposta de 10€ (ou mais) em qualquer mercado
+                na Solverde.pt. A aposta tem de ficar resolvida nas primeiras 72
+                horas seguintes ao registo para ser elegível.{" "}
+              </span>
+            </li>
             <li>
               <span>
                 {" "}
@@ -47,7 +56,6 @@ const Tab = ({ onClose, title, imageSrc, text, category, description }) => {
             </li>
             <li>
               <span>
-               
                 Uma <strong>Free Bet Múltipla</strong> para usares numa aposta
                 múltipla de 10€, com 3 ou mais seleções de qualquer mercado
                 disponível na Solverde.pt e com odd igual ou superior a 2.00.
@@ -55,18 +63,22 @@ const Tab = ({ onClose, title, imageSrc, text, category, description }) => {
             </li>
             <li>
               <span>
-               
                 Uma <strong>Free Bet Ao Vivo</strong> para usares em qualquer
                 mercado Ao Vivo disponível na Solverde.pt, numa aposta de 10€,
-                com odd igual ou superior a 2.00. 
+                com odd igual ou superior a 2.00.
               </span>
             </li>
           </ol>
         </div>
       </div>
       <div className="row">
-        <div className="col-12">
+        <div className="col-6">
           <button className="btn btn-primary btn-primary--bet">Registar</button>
+        </div>
+        <div className="col-6">
+          <button className="btn btn-secondary btn-primary--bet">
+            Termos e Condições
+          </button>
         </div>
       </div>
     </div>
