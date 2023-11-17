@@ -22,11 +22,13 @@ A cloned landing page of a betting promotion for a job application exercise.
 
 - **React**: A JavaScript library for building user interfaces.
 - **Sass**: A CSS preprocessor for more maintainable and readable stylesheets.
-- **Webpack**: A module bundler for JavaScript applications.
-- **Babel**: A JavaScript compiler that transforms ECMAScript 2015+ code into a backwards-compatible version.
+- **Vite**: A fast, modern build tool that serves as a development server and builds your project for production.
 - **Git**: A version control system for tracking changes in source code during software development.
 - **npm**: The package manager for JavaScript, used to install project dependencies.
 - **ESLint**: A static code analysis tool for identifying and fixing problems in JavaScript code.
+
+## Testing and Optimization
+- **Lighthouse**: An open-source, automated tool for improving the quality of web pages.
 
 ## Development Environment
 
@@ -34,7 +36,6 @@ A cloned landing page of a betting promotion for a job application exercise.
 - **GitHub**: Version control and collaboration platform for hosting the project's repository.
 
 ## VSCode Extensions
-
 
 - **Watch Sass**: 
   - Description: A helpful extension for watching and compiling Sass files.
@@ -59,7 +60,6 @@ A cloned landing page of a betting promotion for a job application exercise.
 
 - **Bito AI**: 
   - Description: AI Tool used to improve code readability and generate comments.
-
 
 - **Turbo Console.log**: 
   - Description: Speeds up the process of writing and debugging console.log statements.
