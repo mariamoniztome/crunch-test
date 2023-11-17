@@ -95,6 +95,10 @@ const Grid = () => {
     },
   ];
   
+  // Function to handle category click
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
 
   // Filter the items based on the selected category
   const filteredItems =
@@ -107,25 +111,27 @@ const Grid = () => {
       <div className="category-buttons">
         {/* Button to select "All" category */}
         <button
-          className="btn btn-terciary"
-          onClick={() => setSelectedCategory("All")}
-        >
-          {allCategoryText}
-        </button>
+        className={`btn btn-terciary ${selectedCategory === 'All' ? 'active' : 'All'}`}
+        onClick={() => handleCategoryClick('All')}
+      >
+        {allCategoryText}
+      </button>
+
         {/* Button to select "Bets" category */}
         <button
-          className="btn btn-terciary"
-          onClick={() => setSelectedCategory("Bets")}
-        >
-          {betsCategoryText}
-        </button>
+        className={`btn btn-terciary ${selectedCategory === 'Bets' ? 'active' : ''}`}
+        onClick={() => handleCategoryClick('Bets')}
+      >
+        {betsCategoryText}
+      </button>
+
         {/* Button to select "Casino" category */}
         <button
-          className="btn btn-terciary"
-          onClick={() => setSelectedCategory("Casino")}
-        >
-          {casinoCategoryText}
-        </button>
+        className={`btn btn-terciary ${selectedCategory === 'Casino' ? 'active' : ''}`}
+        onClick={() => handleCategoryClick('Casino')}
+      >
+        {casinoCategoryText}
+      </button>
       </div>
       <div className="bets-wrapper">
         <div className="container">
