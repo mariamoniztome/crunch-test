@@ -34,10 +34,10 @@ const Reference = () => {
   };
 
   return (
-    <div>
+    <div className="reference-wrapper">
       <h2>Refer a Friend</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="friendName">Friend's Name:</label>
+        <label htmlFor="friendName">Friend's Name</label>
         <input
           type="text"
           id="friendName"
@@ -46,7 +46,7 @@ const Reference = () => {
           required
         />
 
-        <label htmlFor="friendEmail">Friend's Email:</label>
+        <label htmlFor="friendEmail">Friend's Email</label>
         <input
           type="email"
           id="friendEmail"
@@ -55,7 +55,7 @@ const Reference = () => {
           required
         />
 
-        <label htmlFor="personalMessage">Personal Message (max 200 characters):</label>
+        <label htmlFor="personalMessage">Message (max 200 characters)</label>
         <textarea
           id="personalMessage"
           value={personalMessage}
@@ -63,7 +63,7 @@ const Reference = () => {
           maxLength={200}
         />
 
-        <button type="submit">Refer a Friend</button>
+        <button className="btn btn-primary" type="submit">Refer a Friend</button>
       </form>
     </div>
   );

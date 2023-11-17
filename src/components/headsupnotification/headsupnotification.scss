@@ -39,7 +39,6 @@
   
       @media (max-width: 768px) {
         margin-bottom: 0;
-        border-radius: 0;
       }
       &__title {
         background-color: $theme-green;
@@ -80,10 +79,17 @@
       margin: 10px;
       padding: 10px;
       box-shadow: 3px 3px 3px $black;
+      @media (max-width: 768px) {
+        
+          width: 50px;
+         
+        
+      }
       &__image {
         width: 100%;
         display: block;
       }
+      
     } 
 
     &.content-hidden {
@@ -94,6 +100,7 @@
       width: 40px;
       height: 40px;
     }
+    
     
   }
 }

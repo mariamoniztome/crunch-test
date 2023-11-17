@@ -8,7 +8,6 @@
  * @returns A React component representing a grid item.
  */
 import React, { useState } from 'react';
-import GridItemPropTypes from "../protypes/PropTypes";
 import Tab from '../tab/Tab';
 import './griditem.scss';
 
@@ -55,8 +54,7 @@ const GridItem = ({ title, imageSrc, text, category, description }) => {
         <p className="terms">*Termos e condições aplicáveis</p>
 
         {/* Button */}
-        <div className="row">
-          <div className="col-12">
+        
             <button
               className="btn btn-primary btn-primary--bet"
               onClick={toggleTab}
@@ -64,8 +62,7 @@ const GridItem = ({ title, imageSrc, text, category, description }) => {
             >
               Participar
             </button>
-          </div>
-        </div>
+          
 
         {/* Render the Tab component if the tab is open */}
         {isTabVisible && (
@@ -82,8 +79,5 @@ const GridItem = ({ title, imageSrc, text, category, description }) => {
     </div>
   );
 };
-
-// PropTypes for type checking
-GridItem.propTypes = GridItemPropTypes;
 
 export default GridItem;

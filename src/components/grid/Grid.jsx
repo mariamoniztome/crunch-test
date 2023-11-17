@@ -7,7 +7,6 @@
 
 import React, { useState } from "react";
 import GridItem from "../griditem/GridItem";
-import GridItemPropTypes from "../protypes/PropTypes";
 import images from "../../assets/img.js";
 import "./grid.scss";
 
@@ -23,7 +22,7 @@ const Grid = () => {
   // Array of items
   const items = [
     {
-      title: "Oferta de Boas-vindas",
+      title: "Oferta Boas-vindas",
       category: "Casino",
       imageSrc: images.imgSrc1,
       text: "Mais de 6.000€ em bónus",
@@ -152,8 +151,5 @@ const Grid = () => {
     </>
   );
 };
-
-// PropTypes for type checking
-Grid.GridItemPropTypes = {};
 
 export default Grid;

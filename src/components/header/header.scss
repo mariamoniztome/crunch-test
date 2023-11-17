@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  @media screen and (max-width: 860px) {
+    display: block;
+    justify-content: center;
+  }
 
   &__logo {
     img {
@@ -17,8 +21,9 @@
     align-items: center;
     gap: 40px;
     width: 100%;
-    @media screen and (max-width: 768px) {
-      padding: 0em 2.4em 0;
+    @media screen and (max-width: 860px) {
+      justify-content: center;
+      margin-bottom: 8px;
     }
   }
   &__nav {
@@ -43,13 +48,12 @@
     }
   }
   &__user {
-    padding: 0 6em 0 0;
+    padding: 0 7em 0 0;
     display: flex;
-    gap: 8px;
-    @media screen and (max-width: 768px) {
-      padding: 0em 1em 0 0;
-    }
-    
-    
+    gap: 8px;    
+    @media screen and (max-width: 860px) {
+      justify-content: center;
+      padding: unset;
+    }    
   }
 }

@@ -19,9 +19,11 @@ const Footer = () => {
 
             {/* Render Sponsors component */}
             <Sponsors />
+            <div className="footer">
 
-            <div className="footer-row">
-                <div className="footer-col">
+           
+            <div className="row">
+                <div className="col-4">
                     <h4>Info</h4>
                     <ul>
                         <li><a href="/">Perguntas Frequentes</a></li>
@@ -33,7 +35,7 @@ const Footer = () => {
                     </ul>
                     
                 </div>
-                <div className="footer-col">
+                <div className="col-4">
                     <ul>
                         <li><a href="/">Jogo Responsável</a></li>
                         <li><a href="/">Termos e Condições</a></li>
@@ -42,9 +44,9 @@ const Footer = () => {
                         <li><a href="/">Blog</a></li>
                     </ul>
                 </div>
-                <div className="footer-col">
+                <div className="col-4">
                     <h4>Disponível em Android e iOS</h4>
-                    <button>Descarregar App Oficial</button>
+                    <button className='btn btn-quaternary'>Descarregar App Oficial</button>
                     <h4>Siga-nos em</h4>
                     <div className="social-links">
                         <a href="/"><i className="facebook-f"></i></a>
@@ -53,6 +55,7 @@ const Footer = () => {
                         <a href="/"><i className="linkedin-in"></i></a>
                     </div>
                 </div>
+            </div>
             </div>
 
              {/* Render CopyFooter component */}
